@@ -63,7 +63,7 @@ function calculator( operador){
     else return 'Operação inválida';
 
     return 'Resultado da operação ' + a + ' ' + operador + ' ' + b + ' = ' + resultado;
-  }
+  };
 }
 
 /*
