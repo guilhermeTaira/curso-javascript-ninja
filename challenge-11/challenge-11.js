@@ -24,7 +24,7 @@
     name: 'Guilherme Taira',
     age: 21,
     weight: 60,
-    birthday: '02/07/1997'
+    birthday: '02/07'
   };
 
   /*
@@ -36,9 +36,14 @@
   Após o loop, mostre a frase:
   'The person has [COUNTER] properties'
   */
+  var counter = 0;
+
   for(var propriedade in person){
     console.log('The ' + propriedade + ' of person is ' + person[propriedade]);
+    counter ++;
   }
+
+  console.log('The person has ' + counter + ' properties.');
 
   /*
   Crie uma função chamada `moreThan`, que vai verificar se a pessoa (objeto
@@ -60,7 +65,16 @@
   Mostre no console os números no array.
   */
   console.log( 'De 0 a 10:' );
+  var numbers = [];
+
+  for(var i = 0; i<=20; i++){
+    if(i > 10)
+      break;
+
+    numbers.push(i);
+  }
   
+  console.log(numbers);
 
   /*
   Faça outro loop de 0 a 20, que adicione a um array chamado `numbers` (já
@@ -68,6 +82,16 @@
   esses. Se o número for ímpar, pular para o próximo número.
   Mostrar no console os números do array.
   */
-  console.log( 'Pares de 0 a 20:' );
-  // ?
+  console.log( 'Pares de 0 a 20:');
+  numbers = [];
+
+  for(var j = 0; j<=20 ; j++){
+    if(j % 2 !== 0)
+      continue;
+
+    numbers.push(j);
+  }
+
+  console.log(numbers);
+
 }());
