@@ -94,10 +94,9 @@
   var myName = 'guilherme';
   var myArrName = [];
 
-  for(var i = 0, len = myName.len; i < len; i++ )
-    i % 2 === 0 ? myArrName.push(myName[i].toUpperCase()) : myArrName.push(myName[i].toLowerCase());
+  for(var n = 0, len = myName.length; n < len; n++)
+    myArrName.push( n % 2 === 0 ? myName[n].toUpperCase() : myName[n].toLowerCase());
 
-  console.log( myArrName );
+  console.log( myArrName.join(''));
   
-
 }());
